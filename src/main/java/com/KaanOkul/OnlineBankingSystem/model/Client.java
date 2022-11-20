@@ -3,8 +3,8 @@ package com.KaanOkul.OnlineBankingSystem.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Customer")
-public class Customer {
+@Table(name = "Client")
+public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class Customer {
     @Column(name = "password")
     private String password;
 
-    public Customer(String firstName, String lastName, String email, String phoneNumber, String password) {
+    public Client(String firstName, String lastName, String email, String phoneNumber, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -28,7 +28,7 @@ public class Customer {
         this.password = password;
     }
 
-    public Customer() {
+    public Client() {
 
     }
 
