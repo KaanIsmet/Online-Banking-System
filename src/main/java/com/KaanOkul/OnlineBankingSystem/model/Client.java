@@ -20,12 +20,20 @@ public class Client {
     @Column(name = "password")
     private String password;
 
-    public Client(String firstName, String lastName, String email, String phoneNumber, String password) {
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "zip-code")
+    private Integer zipCode;
+
+    public Client(String firstName, String lastName, String email, String phoneNumber, String password, String address, Integer zipCode) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.password = password;
+        this.address = address;
+        this.zipCode = zipCode;
     }
 
     public Client() {
